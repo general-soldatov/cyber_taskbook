@@ -16,10 +16,7 @@ alpha = rad(alpha)
 result = round((F1**2 + F2**2 + 2 * F1 * F2 * cos(alpha))**0.5, 2)"""
 
 # task = Config().get_task(category='mechanic')
-token, category, level, num = 22, 33, 4, 55
-api_url = getenv('API_URL')
-response = requests.get(f'{api_url}/task_book/token={token}category={category}_level={level}num={num}')
-data = response.json()
+
 # print(task(0)['data'])
-text = data['event']['pathParams']
+
 pprint(text)
