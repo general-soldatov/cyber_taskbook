@@ -3,7 +3,7 @@ from random import randint, choice
 
 lst = [1, 2, 3, 4]
 
-class TaskUser:
+class TaskSolver:
     def __init__(self, category: str, level: int):
         self.category: str = category
         self.level: int = level
